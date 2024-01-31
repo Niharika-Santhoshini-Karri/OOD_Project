@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: #4E5253; " xmlns="http://javafx.com/javafx/10.0.1"
+            fx:controller="Controller.LoginFormController">
+    <children>
+        <ImageView fx:id="admin" fitHeight="100.0" fitWidth="100.0" layoutX="130.0" layoutY="161.0"
+                   onMouseClicked="#navigate" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/admin.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="customers" fitHeight="100.0" fitWidth="100.0" layoutX="333.0" layoutY="161.0"
+                   onMouseClicked="#navigate" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/customer.png"/>
+            </image>
+        </ImageView>
+
+        <Text fill="D0D4D5" layoutX="41.0" layoutY="83.0" strokeType="INSIDE"
+              strokeWidth="20.0" text="CAR RENTAL SERVICE AGENCY" textAlignment="CENTER" wrappingWidth="521.140625">
+            <font>
+                <Font name="Impact" size="40.0"/>
+            </font>
+        </Text>
+        <Text fill="#ECF0F1" layoutX="161.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN">
+            <font>
+                <Font name="Dialog Bold" size="15.0"/>
+            </font>
+        </Text>
+        <Text fill="#ECF0F1" layoutX="355.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER">
+            <font>
+                <Font name="Dialog Bold" size="15.0"/>
+            </font>
+        </Text>
+
+    </children>
+</AnchorPane>

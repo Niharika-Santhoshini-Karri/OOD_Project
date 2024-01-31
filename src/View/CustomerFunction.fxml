@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: #4E5253; " xmlns="http://javafx.com/javafx/10.0.1"
+            fx:controller="Controller.CustomerFunctionController">
+    <children>
+
+        <ImageView fx:id="search" fitHeight="100.0" fitWidth="100.0" layoutX="130.0" layoutY="161.0"
+                   onMouseClicked="#navigate" pickOnBounds="true" preserveRatio="true"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" >
+            <image>
+                <Image url="@../Images/cus_carsearch.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="members" fitHeight="100.0" fitWidth="100.0" layoutX="333.0" layoutY="161.0"
+                   onMouseClicked="#navigate" pickOnBounds="true" preserveRatio="true"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" >
+            <image>
+                <Image url="@../Images/cus_account.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="img_back" fitHeight="40.0" fitWidth="40.0" layoutX="50.0" layoutY="500.0"
+                   pickOnBounds="true" onMouseClicked="#btn_back" preserveRatio="true"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" >
+            <image>
+                <Image url="@../Images/back.jpg"/>
+            </image>
+        </ImageView>
+
+        <Text fill="#f6f8fa" layoutX="140.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Search">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+
+        <Text fill="#f6f8fa" layoutX="335.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCOUNT INFORMATION">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+
+        <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="83.0" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Customer Operations" textAlignment="CENTER" wrappingWidth="521.140625">
+            <font>
+                <Font name="Serif Bold" size="40.0"/>
+            </font>
+        </Text>
+
+    </children>
+</AnchorPane>

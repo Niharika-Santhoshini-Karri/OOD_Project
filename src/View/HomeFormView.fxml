@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: #4E5253; " xmlns="http://javafx.com/javafx/10.0.1"
+            fx:controller="Controller.HomeFormController">
+    <children>
+
+        <ImageView fx:id="member" fitHeight="100.0" fitWidth="100.0" layoutX="251.0" layoutY="161.0"
+                   onMouseClicked="#navigate" pickOnBounds="true" preserveRatio="true"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" >
+            <image>
+                <Image url="@../Images/managecustomer.png"/>
+            </image>
+        </ImageView>
+
+        <ImageView fx:id="cars" fitHeight="100.0" fitWidth="100.0" layoutX="421.0" layoutY="161.0"
+                   onMouseClicked="#navigate" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/cars.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="issue" fitHeight="116.0" fitWidth="127.0" layoutX="81.0" layoutY="338.0"
+                   onMouseClicked="#navigate" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/carissue.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="bk_return" fitHeight="100.0" fitWidth="100.0" layoutX="421.0" layoutY="349.0"
+                   onMouseClicked="#navigate" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/carreturn.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="bk_search" fitHeight="100.0" fitWidth="100.0" layoutX="81.0" layoutY="161.0"
+                   onMouseClicked="#navigate" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/searchcars.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="img_back" fitHeight="40.0" fitWidth="40.0" layoutX="50.0" layoutY="500.0"
+                   pickOnBounds="true" onMouseClicked="#btn_back" onMouseEntered="#setHoverCursor"
+                   onMouseExited="#setDefaultCursor" preserveRatio="true">
+            <image>
+                <Image url="@../Images/back.jpg"/>
+            </image>
+        </ImageView>
+        <Text fontSmoothingType="LCD" layoutX="41.0" layoutY="83.0" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="Admin Operations" textAlignment="CENTER" wrappingWidth="521.140625">
+            <font>
+                <Font name="Impact" size="40.0"/>
+            </font>
+        </Text>
+
+        <Text fill="#FFFFFF" layoutX="450.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARS"
+              textAlignment="CENTER">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+        <Text fill="#FFFFFF" layoutX="94.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAR ISSUE">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+        <Text fill="#FFFFFF" layoutX="425.0" layoutY="481.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAR RETURN">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+        <Text fill="#FFFFFF" layoutX="92.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAR SEARCH">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+
+        <Text fill="#FFFFFF" layoutX="245.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEMBER CATALOG">
+            <font>
+                <Font name="Dialog Bold" size="14.0"/>
+            </font>
+        </Text>
+
+
+    </children>
+</AnchorPane>

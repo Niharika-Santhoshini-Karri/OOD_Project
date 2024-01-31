@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="bk_iss" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: #4E5253;" xmlns="http://javafx.com/javafx/10.0.1"
+            fx:controller="Controller.CarIssueController">
+    <children>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="28.0" layoutY="555.0" onMouseClicked="#back_click"
+                    pickOnBounds="true" preserveRatio="true" onMouseEntered="#setHoverCursor"
+                    onMouseExited="#setDefaultCursor">
+            <image>
+                <Image url="@../Images/back.jpg"/>
+            </image>
+        </ImageView>
+        <Text  layoutX="184.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CAR ALLOCATION">
+            <font>
+                <Font name = "Serif Bold" size="40.0"/>
+            </font>
+        </Text>
+
+        <TextField fx:id="txt_issid" layoutX="142.0" layoutY="176.0" prefHeight="25.0" prefWidth="320.0"
+                      promptText="Issue ID :"/>
+        <DatePicker fx:id="txt_isu_date" layoutX="140.0" layoutY="201.0" prefHeight="28.0" prefWidth="353.0"
+                       promptText="Issue Date" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+
+        <TextField fx:id="txt_name" layoutX="325.0" layoutY="237.0" prefHeight="25.0" prefWidth="135.0"
+                      promptText="Name"/>
+        <TextField fx:id="txt_title" layoutX="325.0" layoutY="272.0" prefHeight="25.0" prefWidth="135.0"
+                      promptText="Model"/>
+        <ComboBox fx:id="mem_is_id" layoutX="140.0" layoutY="237.0" prefHeight="25.0" prefWidth="135.0"
+                     promptText="Member ID  :" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+        <ComboBox fx:id="car_id" layoutX="140.0" layoutY="272.0" prefHeight="25.0" prefWidth="135.0"
+                     promptText="Car ID :" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+        <Button layoutX="155.0" layoutY="323.0" onAction="#new_action" prefHeight="25.0" prefWidth="91.0"
+                   style="-fx-background-color: #f1c40f;" text="+New"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+        <Button layoutX="277.0" layoutY="323.0" onAction="#add_Action" prefHeight="25.0" prefWidth="91.0"
+                   style="-fx-background-color: #2ecc71;" text="Add"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+<!--        <Button layoutX="379.0" layoutY="323.0" onAction="#delete_Action" prefHeight="25.0" prefWidth="91.0"-->
+<!--&lt;!&ndash;                   style="-fx-background-color: #e74c3c;" text="Delete"&ndash;&gt;-->
+<!--                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />-->
+        <TableView fx:id="bk_ssue_tbl" layoutX="69.0" layoutY="369.0" prefHeight="200.0" prefWidth="465.0">
+            <columns>
+                <TableColumn fx:id="iss_id" prefWidth="100.0" text="Issue ID"/>
+                <TableColumn fx:id="iss_date" prefWidth="105.0" text="Issued Date"/>
+                <TableColumn fx:id="mem_name" prefWidth="100.0" text="Member Id"/>
+                <TableColumn fx:id="mem_id" prefWidth="100.0" text="Car ID"/>
+            </columns>
+            <effect>
+                <InnerShadow>
+                    <input>
+                        <DropShadow/>
+                    </input>
+                </InnerShadow>
+            </effect>
+        </TableView>
+
+    </children>
+</AnchorPane>

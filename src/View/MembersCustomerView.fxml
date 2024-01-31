@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: #4E5253 ; "
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="Controller.MemberCustomerController">
+            
+    <children>
+        <Text layoutX="145.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Profile">
+            <font>
+                <Font name="Serif Bold" size="30.0"/>
+            </font>
+        </Text>
+
+        <TextField fx:id="txt_enterEmail" layoutX="147.0" layoutY="80.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Email :"/>
+
+        <Button fx:id="btn_email_submit" layoutX="145.0" layoutY="116.0" onAction="#btn_email_sbt" prefHeight="25.0"
+                   prefWidth="86.0" style="-fx-background-color: #2ecc71;" text="Submit"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+
+        <TextField fx:id="mem_id" layoutX="145.0" layoutY="153.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Member ID :"/>
+        <TextField fx:id="mem_email" layoutX="145.0" layoutY="190.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Email :"/>
+        <TextField fx:id="mem_nme" layoutX="147.0" layoutY="227.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Name :"/>
+        <TextField fx:id="mem_addss" layoutX="147.0" layoutY="264.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Address :"/>
+        <TextField fx:id="mem_num" layoutX="147.0" layoutY="301.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Contact Number"/>
+        <TextField fx:id="mem_password" layoutX="147.0" layoutY="338.0" prefHeight="25.0" prefWidth="311.0"
+                      promptText="Password"/>
+        <Button fx:id="btn_add" layoutX="145.0" layoutY="375.0" onAction="#btn_update" prefHeight="25.0"
+                   prefWidth="86.0" style="-fx-background-color: #2ecc71;" text="Update"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+
+<!--        <TableView fx:id="mem_tbl" layoutX="70.0" layoutY="360.0" prefHeight="150.0" prefWidth="479.0">-->
+<!--            <columns>-->
+<!--                <TableColumn fx:id="mem_id_col" prefWidth="69.0" text="ID"/>-->
+<!--                <TableColumn fx:id="mem_email_col" prefWidth="134.0" text="Email"/>-->
+<!--                <TableColumn fx:id="mem_name_col" prefWidth="140.0" text="Name"/>-->
+<!--                <TableColumn fx:id="mem_add_col" prefWidth="164.0" text="Address"/>-->
+<!--                <TableColumn fx:id="mem_no_col" prefWidth="111.0" text="Contact No"/>-->
+<!--                <TableColumn fx:id="mem_password_col" prefWidth="134.0" text="Password"/>-->
+<!--            </columns>-->
+<!--            <effect>-->
+<!--                <InnerShadow/>-->
+<!--            </effect>-->
+<!--        </TableView>-->
+
+        <ImageView fx:id="img_bk" fitHeight="40.0" fitWidth="50.0" layoutX="20.0" layoutY="400.0"
+                   onMouseClicked="#img_back"  pickOnBounds="true" preserveRatio="true"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" >
+            <image>
+                <Image url="@../Images/back.jpg"/>
+            </image>
+        </ImageView>
+
+    </children>
+
+</AnchorPane>

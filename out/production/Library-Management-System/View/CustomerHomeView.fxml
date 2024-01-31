@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0"
+            style="-fx-background-color: #4E5253 ; "
+            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="Controller.CustomerHomeController">
+
+    <ImageView fx:id="img_bk" fitHeight="40.0" fitWidth="40.0" layoutX="50.0" layoutY="500.0"
+               onMouseClicked="#img_bk" pickOnBounds="true" onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor"
+               preserveRatio="true">
+        <image>
+            <Image url="@../Images/back.jpg"/>
+        </image>
+    </ImageView>
+
+    <children>
+        <Text  layoutX="145.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER REGISTRATION">
+            <font>
+                <Font name="Serif Bold" size="40.0" />
+            </font>
+        </Text>
+        <TextField fx:id="txt_email" layoutX="145.0" layoutY="85.0" prefHeight="25.0" prefWidth="310.0"
+                      promptText="email"/>
+        <TextField fx:id="txt_name" layoutX="145.0" layoutY="113.0" prefHeight="25.0" prefWidth="310.0"
+                      promptText="Name"/>
+
+        <TextField fx:id="txt_addrs" layoutX="145.0" layoutY="144.0" prefHeight="25.0" prefWidth="310.0"
+                      promptText="Address"/>
+
+        <TextField fx:id="txt_phnum" layoutX="145.0" layoutY="175.0" prefHeight="25.0" prefWidth="310.0"
+                      promptText="Phone Number"/>
+
+        <TextField fx:id="txt_password" layoutX="145.0" layoutY="211.0" prefHeight="25.0" prefWidth="310.0"
+                      promptText="Password"/>
+
+        <TextField fx:id="txt_confirm_password" layoutX="145.0" layoutY="246.0" prefHeight="25.0" prefWidth="310.0"
+                      promptText="Confirm Password"/>
+
+
+        <Button fx:id="btn_sbt" layoutX="145.0" layoutY="282.0" onAction="#btn_sbt" prefHeight="25.0"
+                   prefWidth="86.0" style="-fx-background-color: #CC712E;" text="Submit"
+                   onMouseEntered="#setHoverCursor" onMouseExited="#setDefaultCursor" />
+    </children>
+
+</AnchorPane>
